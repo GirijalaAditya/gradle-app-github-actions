@@ -37,7 +37,7 @@ jobs:
     - name: Archive artifact
       uses: actions/upload-artifact@v2
       with:
-        name: jar
+        name: ${{ github.sha }}.jar
         path: app/build/libs/*.jar
 
   
